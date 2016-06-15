@@ -24,9 +24,6 @@ services:
       - "4000:4000"
     volumes:
       - /apps/blog:/app
-
-    environment:
-      NODE_PORT: 4000
 ```
 
 
@@ -37,11 +34,6 @@ services:
 | Volume                 | Required | Comment                      |
 |------------------------|----------|------------------------------|
 | **/app**               | `No`     | Main **Hexo** project folder |
-
-### Environment variables
-| Env                    | Comment | Default |
-|------------------------|---------|---------|
-| **NODE_PORT**          |         | *4000*  |
 
 [docker-url]: //www.docker.com/
 [phabricator-url]: //hexo.io/
