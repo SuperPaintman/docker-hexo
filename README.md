@@ -24,6 +24,9 @@ services:
       - "4000:4000"
     volumes:
       - /apps/blog:/app
+
+    environment:
+      NODE_ENV: production
 ```
 
 
@@ -39,6 +42,8 @@ services:
 | Env                    | Comment | Default      |
 |------------------------|---------|--------------|
 | **NODE_PORT**          |         | *4000*       |
+| **NODE_ENV**           |         | *production* |
+
 [docker-url]: //www.docker.com/
 [phabricator-url]: //hexo.io/
 [imagelayers-image]: //badge.imagelayers.io/superpaintman/hexo:latest.svg

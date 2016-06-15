@@ -18,6 +18,16 @@ if [ "$1" == hexo -a "$2" == server -a "$#" -eq 2 ]; then
     if [ ! -z "$NODE_PORT" ]; then
         set -- "$@ -p $NODE_PORT"
     fi
+
+    # Mode
+    if [ "$NODE_ENV" == production ]; then
+        : # production
+        hexo clean
+        hexo generate
+        set -- "$@ -s"
+    else
+        : # development
+    fi
 fi
 
 exec "$@"
