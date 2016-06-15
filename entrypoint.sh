@@ -6,7 +6,7 @@
 
 set -e
 
-if [ "$1" == hexo -a "$2" == server ]; then
+if [ "$1" == hexo -a "$2" == server -a "$#" -eq 2 ]; then
     # If folder is empty, init hello world
     if [ `ls -a | wc -l` -eq 2 ]; then
         hexo init
