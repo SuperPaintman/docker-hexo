@@ -13,6 +13,11 @@ if [ "$1" == hexo -a "$2" == server -a "$#" -eq 2 ]; then
     else
         npm install --only=production
     fi
+
+    # Port
+    if [ ! -z "$NODE_PORT" ]; then
+        set -- "$@ -p $NODE_PORT"
+    fi
 fi
 
 exec "$@"

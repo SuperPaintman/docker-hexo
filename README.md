@@ -35,6 +35,10 @@ services:
 |------------------------|----------|------------------------------|
 | **/app**               | `No`     | Main **Hexo** project folder |
 
+### Environment variables
+| Env                    | Comment | Default      |
+|------------------------|---------|--------------|
+| **NODE_PORT**          |         | *4000*       |
 [docker-url]: //www.docker.com/
 [phabricator-url]: //hexo.io/
 [imagelayers-image]: //badge.imagelayers.io/superpaintman/hexo:latest.svg
