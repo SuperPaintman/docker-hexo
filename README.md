@@ -1,5 +1,7 @@
 # Docker Hexo
 
+[![Hexo][hexo-image]][hexo-url]
+
 [![Image Layers][imagelayers-image]][imagelayers-url]
 
 [Docker][docker-url] image for [Hexo][hexo-url]
@@ -47,5 +49,6 @@ services:
 
 [docker-url]: //www.docker.com/
 [hexo-url]: //hexo.io/
+[hexo-image]: //hexo.io/logo.svg
 [imagelayers-image]: //badge.imagelayers.io/superpaintman/hexo:latest.svg
 [imagelayers-url]: //imagelayers.io/?images=superpaintman%2Fhexo:latest
