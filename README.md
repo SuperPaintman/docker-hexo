@@ -46,6 +46,6 @@ services:
 | **HEXO_GENERATE_WATCH** |         | *true*       |
 
 [docker-url]: //www.docker.com/
-[phabricator-url]: //hexo.io/
+[hexo-url]: //hexo.io/
 [imagelayers-image]: //badge.imagelayers.io/superpaintman/hexo:latest.svg
 [imagelayers-url]: //imagelayers.io/?images=superpaintman%2Fhexo:latest
