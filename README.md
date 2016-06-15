@@ -39,10 +39,11 @@ services:
 | **/app**               | `No`     | Main **Hexo** project folder |
 
 ### Environment variables
-| Env                    | Comment | Default      |
-|------------------------|---------|--------------|
-| **NODE_PORT**          |         | *4000*       |
-| **NODE_ENV**           |         | *production* |
+| Env                     | Comment | Default      |
+|-------------------------|---------|--------------|
+| **NODE_PORT**           |         | *4000*       |
+| **NODE_ENV**            |         | *production* |
+| **HEXO_GENERATE_WATCH** |         | *true*       |
 
 [docker-url]: //www.docker.com/
 [phabricator-url]: //hexo.io/

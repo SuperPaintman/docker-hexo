@@ -23,7 +23,13 @@ if [ "$1" == hexo -a "$2" == server -a "$#" -eq 2 ]; then
     if [ "$NODE_ENV" == production ]; then
         : # production
         hexo clean
-        hexo generate
+
+        if [ "$HEXO_GENERATE_WATCH" == "true" ]; then
+            hexo generate -w &
+        else
+            hexo generate
+        fi
+
         set -- $@ -s
     else
         : # development
