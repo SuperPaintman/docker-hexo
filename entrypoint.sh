@@ -16,7 +16,7 @@ if [ "$1" == hexo -a "$2" == server -a "$#" -eq 2 ]; then
 
     # Port
     if [ ! -z "$NODE_PORT" ]; then
-        set -- "$@ -p $NODE_PORT"
+        set -- $@ -p $NODE_PORT
     fi
 
     # Mode
@@ -24,7 +24,7 @@ if [ "$1" == hexo -a "$2" == server -a "$#" -eq 2 ]; then
         : # production
         hexo clean
         hexo generate
-        set -- "$@ -s"
+        set -- $@ -s
     else
         : # development
     fi
