@@ -12,8 +12,8 @@
 ```yaml
 version: "2"
 services:
-  # Phabricator
-  phabricator:
+  # hexo
+  hexo:
     image: superpaintman/hexo
 
     container_name: hexo
